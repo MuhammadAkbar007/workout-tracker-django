@@ -53,11 +53,11 @@
 
 ### Workout
  - [ ] workout CRUD
-    - **Create Workout:** Allow users to create workouts composed of multiple exercises.
-    - **List Workouts:** List active or pending workouts sorted by date and time.
-    - **Update Workout:** Allow users to update workouts and add comments.
-    - **Delete Workout:** Allow users to delete workouts.
-    - **Schedule Workouts:** Allow users to schedule workouts for specific dates and times.
-    - **Generate Reports:** Generate reports on past workouts and progress.
- - [-] exercise CRUD
+    - [-]  **Create Workout:** Allow users to create workouts composed of multiple exercises.
+    - [ ] **List Workouts:** List active or pending workouts sorted by date and time.
+    - [ ] **Update Workout:** Allow users to update workouts and add comments.
+    - [ ] **Delete Workout:** Allow users to delete workouts.
+    - [ ] **Schedule Workouts:** Allow users to schedule workouts for specific dates and times.
+    - [ ] **Generate Reports:** Generate reports on past workouts and progress.
+ - [x] **only admin can write** exercise CRUD 
 
