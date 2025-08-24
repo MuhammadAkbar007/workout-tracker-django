@@ -1,0 +1,33 @@
+### create
+POST http://localhost:8000/api/v1/exercises/
+Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ0b2tlbl90eXBlIjoiYWNjZXNzIiwiZXhwIjoxNzU2MDgxODg5LCJpYXQiOjE3NTYwMzg2ODksImp0aSI6ImVmYWNhNDI4MWEzNjRjMzBiMTUzNWU4MWRiZTQzOGUwIiwidXNlcl9pZCI6IjEifQ.5419DFnjA_XqnEP_7XtuStxaAO9W29WYIqgay7oFc7A
+Content-Type: application/json
+
+{
+	"name": "Jumping",
+	"description": "Jump with rope",
+	"category": "CARDIO",
+	"muscle_group": "OTHER"
+}
+
+### get all
+GET http://localhost:8000/api/v1/exercises/?page=1
+Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ0b2tlbl90eXBlIjoiYWNjZXNzIiwiZXhwIjoxNzU2MDgxODg5LCJpYXQiOjE3NTYwMzg2ODksImp0aSI6ImVmYWNhNDI4MWEzNjRjMzBiMTUzNWU4MWRiZTQzOGUwIiwidXNlcl9pZCI6IjEifQ.5419DFnjA_XqnEP_7XtuStxaAO9W29WYIqgay7oFc7A
+
+### get by id
+GET http://localhost:8000/api/v1/exercises/7/
+Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ0b2tlbl90eXBlIjoiYWNjZXNzIiwiZXhwIjoxNzU2MDgxODg5LCJpYXQiOjE3NTYwMzg2ODksImp0aSI6ImVmYWNhNDI4MWEzNjRjMzBiMTUzNWU4MWRiZTQzOGUwIiwidXNlcl9pZCI6IjEifQ.5419DFnjA_XqnEP_7XtuStxaAO9W29WYIqgay7oFc7A
+
+### edit
+PATCH http://localhost:8000/api/v1/exercises/7/
+Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ0b2tlbl90eXBlIjoiYWNjZXNzIiwiZXhwIjoxNzU2MDgxODg5LCJpYXQiOjE3NTYwMzg2ODksImp0aSI6ImVmYWNhNDI4MWEzNjRjMzBiMTUzNWU4MWRiZTQzOGUwIiwidXNlcl9pZCI6IjEifQ.5419DFnjA_XqnEP_7XtuStxaAO9W29WYIqgay7oFc7A
+Content-Type: application/json
+
+{
+	"name": "Bicycle ABS",
+	"category": "STRENGTH"
+}
+
+### delete by id
+DELETE http://localhost:8000/api/v1/exercises/7/
+Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ0b2tlbl90eXBlIjoiYWNjZXNzIiwiZXhwIjoxNzU2MDgxODg5LCJpYXQiOjE3NTYwMzg2ODksImp0aSI6ImVmYWNhNDI4MWEzNjRjMzBiMTUzNWU4MWRiZTQzOGUwIiwidXNlcl9pZCI6IjEifQ.5419DFnjA_XqnEP_7XtuStxaAO9W29WYIqgay7oFc7A

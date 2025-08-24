@@ -10,7 +10,16 @@ Content-Type: application/json
 	"last_name": "Doe"
 }
 
-### login
+### login as admin
+POST http://localhost:8000/api/v1/auth/login/
+Content-Type: application/json
+
+{
+	"email": "akbarjondev007@gmail.com",
+	"password": "root1234"
+}
+
+### login as user
 POST http://localhost:8000/api/v1/auth/login/
 Content-Type: application/json
 
