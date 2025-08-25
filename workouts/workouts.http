@@ -1,0 +1,35 @@
+### create
+POST http://localhost:8000/api/v1/workouts/
+Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ0b2tlbl90eXBlIjoiYWNjZXNzIiwiZXhwIjoxNzU2MTY0NzUyLCJpYXQiOjE3NTYxMjE1NTIsImp0aSI6IjRlZGNlODY4NDFhNzRlMWNhMjY2ZGQ0YzQzZTY2NzZmIiwidXNlcl9pZCI6IjIifQ.VLR6xvMr0qDeF57nG8gsG5vuxL7a2Lxa2KLlPHe3BxU
+Content-Type: application/json
+
+{
+	"scheduled_at": "2025-09-15T12:30:00Z",
+	"comment": "Chest day!",
+	"status": "PENDING",
+	"workout_exercises": [
+		{"exercise": 1, "repetitions": 12, "sets": 4, "weight": 50},
+		{"exercise": 3, "repetitions": 10, "sets": 3, "weight": 70}
+	]
+}
+
+### get all
+GET http://localhost:8000/api/v1/workouts/?page=1
+Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ0b2tlbl90eXBlIjoiYWNjZXNzIiwiZXhwIjoxNzU2MTY0NzUyLCJpYXQiOjE3NTYxMjE1NTIsImp0aSI6IjRlZGNlODY4NDFhNzRlMWNhMjY2ZGQ0YzQzZTY2NzZmIiwidXNlcl9pZCI6IjIifQ.VLR6xvMr0qDeF57nG8gsG5vuxL7a2Lxa2KLlPHe3BxU
+
+### get by id
+GET http://localhost:8000/api/v1/workouts/2/
+Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ0b2tlbl90eXBlIjoiYWNjZXNzIiwiZXhwIjoxNzU2MTY0NzUyLCJpYXQiOjE3NTYxMjE1NTIsImp0aSI6IjRlZGNlODY4NDFhNzRlMWNhMjY2ZGQ0YzQzZTY2NzZmIiwidXNlcl9pZCI6IjIifQ.VLR6xvMr0qDeF57nG8gsG5vuxL7a2Lxa2KLlPHe3BxU
+
+### edit
+PATCH http://localhost:8000/api/v1/workouts/2/
+Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ0b2tlbl90eXBlIjoiYWNjZXNzIiwiZXhwIjoxNzU2MTY0NzUyLCJpYXQiOjE3NTYxMjE1NTIsImp0aSI6IjRlZGNlODY4NDFhNzRlMWNhMjY2ZGQ0YzQzZTY2NzZmIiwidXNlcl9pZCI6IjIifQ.VLR6xvMr0qDeF57nG8gsG5vuxL7a2Lxa2KLlPHe3BxU
+Content-Type: application/json
+
+{
+	"comment": "Let's rock!"
+}
+
+### delete by id
+DELETE http://localhost:8000/api/v1/workouts/2/
+Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ0b2tlbl90eXBlIjoiYWNjZXNzIiwiZXhwIjoxNzU2MTY0NzUyLCJpYXQiOjE3NTYxMjE1NTIsImp0aSI6IjRlZGNlODY4NDFhNzRlMWNhMjY2ZGQ0YzQzZTY2NzZmIiwidXNlcl9pZCI6IjIifQ.VLR6xvMr0qDeF57nG8gsG5vuxL7a2Lxa2KLlPHe3BxU

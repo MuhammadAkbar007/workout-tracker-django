@@ -54,6 +54,8 @@
 ### Workout
  - [ ] workout CRUD
     - [-]  **Create Workout:** Allow users to create workouts composed of multiple exercises.
+    > [!NOTE]
+    > check fields like scheduled_at
     - [ ] **List Workouts:** List active or pending workouts sorted by date and time.
     - [ ] **Update Workout:** Allow users to update workouts and add comments.
     - [ ] **Delete Workout:** Allow users to delete workouts.

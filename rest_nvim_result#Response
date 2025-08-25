@@ -1,0 +1,32 @@
+### create
+POST http://localhost:8000/api/v1/workouts/
+HTTP/1.1 201 Created
+
+# @_RES (formatted)
+{
+  "id": 2,
+  "scheduled_at": "2025-09-15T12:30:00Z",
+  "comment": "Chest day!",
+  "status": "PENDING",
+  "created_at": "2025-08-25T13:17:26.284669Z",
+  "updated_at": "2025-08-25T13:17:26.284684Z",
+  "workout_exercises": [
+    {
+      "id": 3,
+      "exercise": 1,
+      "exercise_name": "Push-up",
+      "repetitions": 12,
+      "sets": 4,
+      "weight": 50
+    },
+    {
+      "id": 4,
+      "exercise": 3,
+      "exercise_name": "Bench Press",
+      "repetitions": 10,
+      "sets": 3,
+      "weight": 70
+    }
+  ]
+}
+# @_END
