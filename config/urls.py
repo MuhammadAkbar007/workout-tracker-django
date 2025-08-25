@@ -24,4 +24,5 @@ urlpatterns = [
     path(BASE_URL + "admin/", admin.site.urls),
     path(BASE_URL + "auth/", include("users.urls")),
     path(BASE_URL + "exercises/", include("exercises.urls")),
+    path(BASE_URL + "workouts/", include("workouts.urls")),
 ]
