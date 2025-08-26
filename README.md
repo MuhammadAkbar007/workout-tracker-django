@@ -52,12 +52,12 @@
  - [x] refresh tokens
 
 ### Workout
- - [ ] workout CRUD
+ - [x] workout CRUD
     - [x]  **Create Workout:** Allow users to create workouts composed of multiple exercises.
     - [x] **List Workouts:** List active or pending workouts sorted by date and time.
     - [x] **Update Workout:** Allow users to update workouts and add comments.
     - [x] **Delete Workout:** Allow users to delete workouts.
     - [x] **Schedule Workouts:** Allow users to schedule workouts for specific dates and times.
-    - [-] **Generate Reports:** Generate reports on past workouts and progress.
+    - [x] **Generate Reports:** Generate reports on past workouts and progress.
  - [x] **only admin can write** exercise CRUD 
 
